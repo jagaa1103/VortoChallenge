@@ -9,6 +9,7 @@ import Foundation
 
 
 struct Restaurant : Identifiable, Codable {
+    
     let id: String
     let alias: String
     let name: String
@@ -21,6 +22,12 @@ struct Restaurant : Identifiable, Codable {
     let phone: String
     let display_phone: String
     let distance: Double
+}
+
+extension Restaurant {
+    static func == (lhs: Restaurant, rhs: Restaurant) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
 
 

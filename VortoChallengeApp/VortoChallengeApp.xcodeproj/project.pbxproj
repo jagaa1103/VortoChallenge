@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		357683BD2569AFBE00F524CB /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357683BC2569AFBE00F524CB /* MapViewModel.swift */; };
+		357683C2256A0BBA00F524CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357683C1256A0BBA00F524CB /* Constants.swift */; };
+		357683D2256AEA0F00F524CB /* MapComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357683D1256AEA0F00F524CB /* MapComponent.swift */; };
+		35CF0C61256B30B900E87A62 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CF0C60256B30B900E87A62 /* NetworkService.swift */; };
+		35CF0C66256B618100E87A62 /* RestaurantAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CF0C65256B618100E87A62 /* RestaurantAnnotation.swift */; };
+		35CF0C6E256B6DEA00E87A62 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CF0C6D256B6DEA00E87A62 /* DetailView.swift */; };
+		35CF0C76256B90CB00E87A62 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CF0C75256B90CB00E87A62 /* ImageLoader.swift */; };
+		35CF0C7B256B931500E87A62 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CF0C7A256B931500E87A62 /* ImageView.swift */; };
 		35E8EA112568D6FF001D1023 /* VortoChallengeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E8EA102568D6FF001D1023 /* VortoChallengeAppApp.swift */; };
 		35E8EA132568D6FF001D1023 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E8EA122568D6FF001D1023 /* ContentView.swift */; };
 		35E8EA152568D700001D1023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E8EA142568D700001D1023 /* Assets.xcassets */; };
@@ -43,6 +51,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		357683BC2569AFBE00F524CB /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		357683C1256A0BBA00F524CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		357683D1256AEA0F00F524CB /* MapComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapComponent.swift; sourceTree = "<group>"; };
+		35CF0C60256B30B900E87A62 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		35CF0C65256B618100E87A62 /* RestaurantAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAnnotation.swift; sourceTree = "<group>"; };
+		35CF0C6D256B6DEA00E87A62 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		35CF0C75256B90CB00E87A62 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		35CF0C7A256B931500E87A62 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		35E8EA0D2568D6FF001D1023 /* VortoChallengeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VortoChallengeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E8EA102568D6FF001D1023 /* VortoChallengeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VortoChallengeAppApp.swift; sourceTree = "<group>"; };
 		35E8EA122568D6FF001D1023 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +141,7 @@
 				35E8EA192568D700001D1023 /* Info.plist */,
 				35E8EA162568D700001D1023 /* Preview Content */,
 				35E8EA7B2568E4FE001D1023 /* SceneDelegate.swift */,
+				357683C1256A0BBA00F524CB /* Constants.swift */,
 			);
 			path = VortoChallengeApp;
 			sourceTree = "<group>";
@@ -162,6 +179,10 @@
 				35E8EA472568D785001D1023 /* SearchView.swift */,
 				35E8EA4C2568D796001D1023 /* RestaurantListView.swift */,
 				35E8EA512568D83C001D1023 /* ListItem.swift */,
+				357683D1256AEA0F00F524CB /* MapComponent.swift */,
+				35CF0C65256B618100E87A62 /* RestaurantAnnotation.swift */,
+				35CF0C6D256B6DEA00E87A62 /* DetailView.swift */,
+				35CF0C7A256B931500E87A62 /* ImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				35E8EA652568DDA8001D1023 /* SearchViewModel.swift */,
+				357683BC2569AFBE00F524CB /* MapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				35E8EA6B2568DE73001D1023 /* LocationService.swift */,
+				35CF0C60256B30B900E87A62 /* NetworkService.swift */,
+				35CF0C75256B90CB00E87A62 /* ImageLoader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -321,16 +345,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35CF0C7B256B931500E87A62 /* ImageView.swift in Sources */,
 				35E8EA522568D83C001D1023 /* ListItem.swift in Sources */,
+				35CF0C6E256B6DEA00E87A62 /* DetailView.swift in Sources */,
+				35CF0C66256B618100E87A62 /* RestaurantAnnotation.swift in Sources */,
 				35E8EA592568DB42001D1023 /* Result.swift in Sources */,
 				35E8EA6C2568DE73001D1023 /* LocationService.swift in Sources */,
 				35E8EA482568D785001D1023 /* SearchView.swift in Sources */,
+				357683BD2569AFBE00F524CB /* MapViewModel.swift in Sources */,
 				35E8EA132568D6FF001D1023 /* ContentView.swift in Sources */,
 				35E8EA612568DBA6001D1023 /* Restaurant.swift in Sources */,
+				35CF0C76256B90CB00E87A62 /* ImageLoader.swift in Sources */,
 				35E8EA4D2568D796001D1023 /* RestaurantListView.swift in Sources */,
 				35E8EA7C2568E4FE001D1023 /* SceneDelegate.swift in Sources */,
 				35E8EA662568DDA8001D1023 /* SearchViewModel.swift in Sources */,
+				35CF0C61256B30B900E87A62 /* NetworkService.swift in Sources */,
+				357683D2256AEA0F00F524CB /* MapComponent.swift in Sources */,
 				35E8EA402568D773001D1023 /* MapView.swift in Sources */,
+				357683C2256A0BBA00F524CB /* Constants.swift in Sources */,
 				35E8EA812568EE12001D1023 /* Coordinate.swift in Sources */,
 				35E8EA112568D6FF001D1023 /* VortoChallengeAppApp.swift in Sources */,
 			);

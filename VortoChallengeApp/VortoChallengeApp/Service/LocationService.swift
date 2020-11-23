@@ -14,21 +14,31 @@ protocol LocationManagerDelegate {
     func locationChanged(coord: Coordinate)
 }
 
-class LocationManager: NSObject, CLLocationManagerDelegate {
+class LocationManager: NSObject, ObservableObject {
     
     let locationManager = CLLocationManager()
-    var lastUpdatedLocation: Coordinate?
+    @Published var lastUpdatedLocation: Coordinate?
     
     var delegate: LocationManagerDelegate?
     
-    func startLocation(){
+    override init() {
+        super.init()
         locationManager.desiredAccuracy = .greatestFiniteMagnitude
-        locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+        locationManager.delegate = self
     }
+    
     func stopLocation(){
         locationManager.stopUpdatingLocation()
     }
+    
+    func getLastLocation() -> Coordinate? {
+        return lastUpdatedLocation
+    }
+}
+
+extension LocationManager: CLLocationManagerDelegate {
+    
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         switch manager.authorizationStatus {
@@ -58,10 +68,6 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
             delegate?.locationChanged(coord: coord)
             self.lastUpdatedLocation = coord
         }
-    }
-    
-    func getLastLocation() -> Coordinate? {
-        return lastUpdatedLocation
     }
 }
 

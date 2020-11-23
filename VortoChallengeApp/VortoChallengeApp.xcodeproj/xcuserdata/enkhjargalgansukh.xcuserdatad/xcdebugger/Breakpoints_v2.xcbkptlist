@@ -7,17 +7,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5078DAC4-50EA-4BD9-A700-0EA7ED532387"
+            uuid = "3C492617-E78B-4F27-93AB-461DEE581A96"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VortoChallengeApp/SceneDelegate.swift"
+            filePath = "VortoChallengeApp/View/MapComponent.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "Coordinator"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

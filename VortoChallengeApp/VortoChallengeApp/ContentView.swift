@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var locationManager = LocationManager()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        SearchView(coordinate: Coordinate(lat: 37.33021261, lon: -122.02671669))
+//        TabView {
+//            SearchView(coordinate: Coordinate(lat: 37.33021261, lon: -122.02671669)).tabItem {
+//                Image(systemName: "list.dash")
+//                Text("Search")
+//            }
+//            MapView(coordinate: locationManager.lastUpdatedLocation ?? Coordinate(lat: 37.33021261, lon: -122.02671669)).tabItem {
+//                Image(systemName: "location")
+//                Text("Search")
+//            }
+//        }
     }
 }
 
